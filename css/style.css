@@ -43,18 +43,6 @@ img {
     position: relative;
 }
 
-.main-wrapper::before {
-    /*    content: '';
-        position: absolute;
-        width: 100%;
-        height: auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -2;
-        background: url("../img/bg-l.png")no-repeat left;*/
-}
-
 .main-wrapper::after {
     content: '';
     position: absolute;
@@ -82,11 +70,6 @@ img {
     line-height: 25px;
 
 }
-
-.btn-search {
-
-}
-
 .main-container {
     background: white;
 }
@@ -104,24 +87,7 @@ nav .menu{
 ul.menu >li{
     font-size: 13px;
 }
-ul.menu >li>a{
-/*    padding: 10px 15px;*/
-}
 .menu>li>a {
-    /*font-weight: 700;
-
-    font-size: 13px;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    line-height: 38px;
-    text-align: center;
-    height: 100%;
-    text-decoration: none;
-    display: block;
-    position: relative;
-    background: #1d2124;
-
-    overflow: hidden;*/
     white-space: nowrap;
     font-family: "OpenSans Regular",sans-serif;
     background: #384349;
@@ -136,14 +102,19 @@ ul.menu >li>a{
     line-height: 1em;
 
 }
+.menu>li:last-child a{
+    background: white;
 
+}
+.menu>li:last-child a span{
+    color: #1d2124;
+}
 .menu > li > a span {
     display: inline-block;
     margin-left: 13px;
     color: white;
     font-family: "OpenSans Regular",sans-serif;
 }
-
 .icon-m {
     color: #fcbb0b;
     display: block;
@@ -155,7 +126,6 @@ ul.menu >li>a{
     background: #fcbb0b;
     padding-top: 10px;
 }
-
 .phone a {
     padding: 5px 26px;
     font-size: 30px;
@@ -163,10 +133,7 @@ ul.menu >li>a{
     text-decoration: none;
     font-weight: bold;
 }
-
-.phone a i {
-    margin-right: 15px;
-}
+.phone a i {margin-right: 15px;}
 
 .social a {
     display: inline-block;
@@ -177,17 +144,12 @@ ul.menu >li>a{
     color: #3a4248;
 }
 
-.social a:hover {
-    color: #fff;
+.social a:hover {color: #fff;}
+
+#search {width: 100%;
 }
 
-#search {
-    width: 100%;
-}
-
-.input > input {
-    padding: 5px 200px 5px 5px;
-}
+.input > input {padding: 5px 200px 5px 5px;}
 
 .btn-search button {
     padding: 5px;
@@ -199,13 +161,15 @@ ul.menu >li>a{
     background: #384349;
     margin-top: 10px;
     margin-bottom: 0;
-    padding: 20px 5px;
+    padding: 20px 66px 20px 6px;
     text-align: center;
     color: #fff;
     text-transform: capitalize;
     font-size: 26px;
     line-height: 1em;
 }
+
+.heading i{padding-right: 40px;}
 /*SECTION*/
 section {
     position: relative;
@@ -292,9 +256,6 @@ a.btn-more:hover {
     transition: .3s;
 }
 
-/*.card-tov:hover{
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-}*/
 .card-img a:hover {
     transform: scale(1.02);
 
