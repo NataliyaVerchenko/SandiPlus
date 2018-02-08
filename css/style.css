@@ -90,12 +90,70 @@ img {
 .main-container {
     background: white;
 }
+/*MENU*/
+nav{
+    margin-top: 10px;
+}
+nav .menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    background: #374347;
+}
+ul.menu >li{
+    font-size: 13px;
+}
+ul.menu >li>a{
+/*    padding: 10px 15px;*/
+}
+.menu>li>a {
+    /*font-weight: 700;
+
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    line-height: 38px;
+    text-align: center;
+    height: 100%;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    background: #1d2124;
+
+    overflow: hidden;*/
+    white-space: nowrap;
+    font-family: "OpenSans Regular",sans-serif;
+    background: #384349;
+    margin-top: 2px;
+    margin-bottom: 0;
+    padding: 23px 7px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    line-height: 1em;
+
+}
+
+.menu > li > a span {
+    display: inline-block;
+    margin-left: 13px;
+    color: white;
+    font-family: "OpenSans Regular",sans-serif;
+}
+
+.icon-m {
+    color: #fcbb0b;
+    display: block;
+    padding-left: 7px;
+}
 
 /*HEADER*/
 .header-bg {
     background: #fcbb0b;
     padding-top: 10px;
-
 }
 
 .phone a {
@@ -125,7 +183,6 @@ img {
 
 #search {
     width: 100%;
-
 }
 
 .input > input {
@@ -138,7 +195,17 @@ img {
     color: white;
     border: 3px solid transparent;
 }
-
+.col-left h3.heading{
+    background: #384349;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 20px 5px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 26px;
+    line-height: 1em;
+}
 /*SECTION*/
 section {
     position: relative;
