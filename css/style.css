@@ -82,26 +82,24 @@ nav .menu{
     padding: 0;
     list-style: none;
     font-size: 0;
-    background: #374347;
 }
 ul.menu >li{
-    font-size: 13px;
-}
-.menu>li>a {
-    white-space: nowrap;
-    font-family: "OpenSans Regular",sans-serif;
-    background: #384349;
-    margin-top: 2px;
-    margin-bottom: 0;
-    padding: 23px 7px;
-    text-decoration: none;
-    text-align: center;
     display: inline-block;
-    color: #fff;
     font-size: 17px;
-    line-height: 1em;
-
+    background: #374347;
 }
+
+
+.menu>li>a {
+
+    text-decoration: none;
+    padding: 22px 8px;
+    display:block;
+    color: #fff;
+    line-height: 67px;
+    height: 67px;
+}
+
 .menu>li:last-child a{
     background: white;
 
@@ -127,11 +125,14 @@ ul.menu >li{
     padding-top: 10px;
 }
 .phone a {
-    padding: 5px 26px;
-    font-size: 30px;
+    padding: 5px 15px;
+    font-size: 26px;
     color: #3a4248;
     text-decoration: none;
     font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
 }
 .phone a i {margin-right: 15px;}
 
@@ -149,24 +150,24 @@ ul.menu >li{
 #search {width: 100%;
 }
 
-.input > input {padding: 5px 200px 5px 5px;}
+.input > input {padding: 5px;}
 
 .btn-search button {
     padding: 5px;
     background: #384349;
     color: white;
-    border: 3px solid transparent;
+    border: 1px solid transparent;
 }
 .col-left h3.heading{
     background: #384349;
     margin-top: 10px;
     margin-bottom: 0;
-    padding: 20px 66px 20px 6px;
+    padding: 5px 5px;
     text-align: center;
     color: #fff;
     text-transform: capitalize;
     font-size: 26px;
-    line-height: 1em;
+    line-height: 57px;
 }
 
 .heading i{padding-right: 40px;}
@@ -384,4 +385,62 @@ aside .heading, section .heading, .heading h3 {
     font-size: 19px;
     padding: 0 8px 0 0;
     color: orange;
+
+}
+
+/*MEDIA QUERYS*/
+@media (max-width: 768px){
+    .phone a {
+        display: inline-block;
+        padding: 5px 5px;
+        font-size: 1.2em;
+        height: 50px;
+        line-height: 50px;
+        font-weight: normal;
+    }
+
+
+
+}
+@media (max-width: 960px){
+    .phone a {
+        display: inline-block;
+        padding: 5px 5px;
+        font-size: 1.2em;
+        height: 34px;
+        line-height: 34px;
+        font-weight: normal;
+    }
+    .social a {
+        margin: 0;
+    }
+    a.logo{
+        max-width: 20%;
+        max-height: 143px;
+    }
+    .col-left h3.heading {
+        background: #384349;
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding: 5px 8px 20px 5px;
+        text-align: center;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 20px;
+        height: 55px;
+        line-height: 55px;
+    }
+    .card-tov{
+        text-align: center;
+    }
+
+    .menu>li>a {
+        padding: 22px 8px;
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 17px;
+        line-height: 67px;
+        height: 67px;
+    }
 }
